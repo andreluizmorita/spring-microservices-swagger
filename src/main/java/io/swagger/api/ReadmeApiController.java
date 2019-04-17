@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-04-17T15:51:38.272Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2018-07-18T02:52:12.827Z")
 
 @Controller
 public class ReadmeApiController implements ReadmeApi {
@@ -36,9 +36,8 @@ public class ReadmeApiController implements ReadmeApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> readme() {
-        String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+    public ResponseEntity<String> readme() {
+        return new ResponseEntity<String>("Esta API tem por objetivo criar, alterar, consultar e excluir clientes.", HttpStatus.OK);
     }
 
 }
